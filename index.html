@@ -11,32 +11,30 @@
         <h1>Verzorg je kitty</h1>
         <article id="pet">
             <input type="text" id="Naam-input" placeholder="Geef je kat een naam">
-            <button onclick="setNaam()">Naam instellen</button>
+            <button id="set-naam-btn">Naam instellen</button>
             <h2 id="Naam">Naamloze kat</h2>
             <img id="kat-img" src="blackCat.png" alt="Tamagotchi">
+            <p id="melding" class="melding hidden"></p>
+
             <p id="status">Honger: 5, Energie: 5, Geluk: 5</p>
-            <p id="warning-honger" class="warning" style="display: none; color: red;">De kat heeft honger!</p>
-            <p id="warning-geluk" class="warning" style="display: none; color: red;">De kat is ongelukkig!</p>
+            <p id="warning-honger" class="warning hidden">De kat heeft honger!</p>
+            <p id="warning-geluk" class="warning hidden">De kat is ongelukkig!</p>
         </article>
         <article id="actions">
-            <button onclick="eten()">Voer</button>
-            <button onclick="spelen()">Speel</button>
-            <button onclick="slapen()">Slaap</button>
+            <button id="voer-btn">Voer</button>
+            <button id="speel-btn">Speel</button>
+            <button id="slaap-btn">Slaap</button>
         </article>
         <article id="fashion">
             <h3>Fashion</h3>
-               <!-- bron: Surirug, P. (z.d.). Realistic computer drawing of a cat. Vecteezy. https://www.vecteezy.com/free-png/cat -->
-               <button onclick="veranderKat('blackCat.png')">Zwarte kat</button> 
-               <!-- bron: Surirug, P. (z.d.). Realistic computer drawing of a cat. Vecteezy. https://www.vecteezy.com/free-png/cat -->
-               <button onclick="veranderKat('orangeCat.png')">Rode kat</button>
-              <!-- bron: Premium Photo | Charming Disneystyle animated white cat with big blue eyes. (2024, 21 maart). Freepik. https://www.freepik.com/premium-ai-image/charming-disneystyle-animated-white-cat-with-big-blue-eyes_160215705.htm-->
-               <button onclick="veranderKat('whiteCat.png')">Witte kat</button> 
+            <button id="black-cat-btn">Zwarte kat</button>
+            <button id="orange-cat-btn">Rode kat</button>
+            <button id="white-cat-btn">Witte kat</button>
         </article>
-        <div id="reset" style="display: none;">
-            <button onclick="resetGame()">Opnieuw beginnen</button>
+        <div id="reset" class="hidden">
+            <button id="reset-btn">Opnieuw beginnen</button>
         </div>
     </section>
     <script src="script.js"></script>
 </body>
 </html>
-

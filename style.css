@@ -47,3 +47,29 @@ section {
     color: red;
     font-weight: bold;
 }
+
+.hidden {
+    display: none;
+}
+.melding {
+    color: #ff8c00;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.melding-blok {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.2rem;
+    z-index: 1000;
+}
+
+
+
